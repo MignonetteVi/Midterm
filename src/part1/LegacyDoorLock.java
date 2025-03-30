@@ -12,4 +12,8 @@ class LegacyDoorLock {
         System.out.println("Замок заблокирован (устаревшая система!)");
         locked = true;
     }
+
+    public boolean isLocked() {
+        return locked;
+    }
 }
