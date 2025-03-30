@@ -2,6 +2,7 @@ package part1;
 
 class RobotVacuum implements SmartDevice {
     private String name;
+    boolean isActive;
 
     public RobotVacuum(String name) {
         this.name = name;
@@ -19,6 +20,6 @@ class RobotVacuum implements SmartDevice {
 
     @Override
     public String getStatus() {
-        return name + ": Работает";
+        return  name + ":" + (isActive ? "Активен" : "Не активен");
     }
 }

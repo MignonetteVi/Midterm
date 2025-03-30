@@ -3,6 +3,7 @@ package part1;
 // Конкретные устройства (Листовые элементы для Composite Pattern)
 class Light implements SmartDevice {
     private String name;
+    boolean isActive;
 
     public Light(String name) {
         this.name = name;
@@ -20,6 +21,6 @@ class Light implements SmartDevice {
 
     @Override
     public String getStatus() {
-        return name + ": Включен";
+        return  name + ":" + (isActive ? "Активен" : "Не активен");
     }
 }
